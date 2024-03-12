@@ -1,11 +1,10 @@
-import React, { useRef, useMemo } from "react";
+import React, { useMemo } from "react";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import "../App.css";
 
 const Grid = ({ rowData, columnDefs, onGridReady }) => {
-  const gridApiRef = useRef(null);
 
   const defaultColDef = useMemo(() => {
     return {

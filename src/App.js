@@ -23,7 +23,7 @@ function App() {
   console.log("gridApiRef", gridApiRef);
   useEffect(() => {
     fetch(
-      `https://api.etherscan.io/api?module=account&action=txlist&address=0x6Fb447Ae94F5180254D436A693907a1f57696900&startblock=16689267&endblock=18982605&sort=asc&apikey=${process.env.REACT_APP_ETHERSCAN_API_KEY}`
+      `https://api.etherscan.io/api?module=account&action=txlist&address=0x6Fb447Ae94F5180254D436A693907a1f57696900&startblock=16689267&endblock=18982605&sort=asc&apikey=${process.env.ETHERSCAN_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
