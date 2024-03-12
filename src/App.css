@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.export-button-container {
+  margin-bottom: 20px;
+}
+
+.content-container {
+  width: 100%;
+}
+
+.grid-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 0 10px;
+  }
+}
+
+.export-button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ag-theme-quartz-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* App.css */
+
+/* Style for the toggle buttons */
+.button-container {
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the active (selected) toggle button */
+.button-container button.active {
+  background-color: #0056b3;
+}
+
+/* Style for the inactive toggle buttons */
+.button-container button:not(.active) {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.button-container button:not(.active):hover {
+  background-color: #ddd;
+}
+
+/* Style for the Ag-Grid */
+.ag-theme-quartz .ag-header-cell,
+.ag-theme-quartz .ag-header-group-cell {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.ag-theme-quartz .ag-cell {
+  border-bottom: 1px solid #ddd;
+}
+
+.ag-theme-quartz .ag-row {
+  background-color: #fff;
+}
+
+.ag-theme-quartz .ag-row-even {
+  background-color: #f9f9f9;
+}
